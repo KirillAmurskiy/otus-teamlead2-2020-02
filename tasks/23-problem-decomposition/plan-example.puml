@@ -1,0 +1,48 @@
+@startgantt
+
+-- Auth --
+
+[Auth UX design] on {Anna} lasts 1 week 
+[Auth UI design] on {Anna} lasts 1 week
+[Auth Backend] on {Kirill}  lasts 2 weeks
+[Auth iOS] on {Vasiliy}  lasts 2 weeks
+[Auth iOS integration] on {Sergey} lasts 1 week
+[Auth iOS UI fix] on {Sergey} lasts 1 week
+
+[Auth UI design] starts at [Auth UX design]'s end
+[Auth Backend] starts at [Auth UX design]'s end
+[Auth iOS] starts at [Auth UX design]'s end
+
+[Auth iOS integration] starts at [Auth Backend]'s end
+
+[Auth iOS UI fix] starts at [Auth UI design]'s end
+[Auth iOS UI fix] starts at [Auth iOS]'s end
+[Auth iOS UI fix] starts at [Auth iOS integration]'s end
+
+
+-- Personal data --
+
+[Personal Data UX design] on {Anna} lasts 1 week
+[Personal Data UI design] on {Anna} lasts 1 week
+[Personal Data Backend] on {Kirill}  lasts 2 weeks
+[Personal Data iOS] on {Vasiliy}  lasts 2 weeks
+[Personal Data iOS integration] on {Vasiliy} lasts 1 week
+[Personal Data iOS UI fix] on {Sergey} lasts 1 week
+
+[Personal Data UX design] starts at [Auth UI design]'s end
+[Personal Data UI design] starts at [Personal Data UX design]'s end
+
+[Personal Data Backend] starts at [Auth Backend]'s end
+[Personal Data Backend] starts at [Personal Data UX design]'s end
+
+[Personal Data iOS] starts at [Auth iOS]'s end
+[Personal Data iOS] starts at [Personal Data UX design]'s end
+
+[Personal Data iOS integration] starts at [Personal Data Backend]'s end
+[Personal Data iOS integration] starts at [Personal Data iOS]'s end
+
+[Personal Data iOS UI fix] starts at [Personal Data UI design]'s end
+[Personal Data iOS UI fix] starts at [Personal Data iOS integration]'s end
+[Personal Data iOS UI fix] starts at [Personal Data iOS]'s end
+
+@endgantt

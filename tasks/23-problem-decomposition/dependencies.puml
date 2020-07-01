@@ -1,0 +1,18 @@
+@startgantt
+
+[UX design] lasts 1 week 
+[UI design] lasts 1 week
+[Backend] lasts 2 weeks
+[iOS development] lasts 2 weeks
+[iOS integration] lasts 1 week
+[iOS UI fix] lasts 1 week
+
+[UI design] starts at [UX design]'s end
+[Backend] starts at [UX design]'s end
+[iOS development] starts at [UX design]'s end
+[iOS integration] starts at [Backend]'s end
+
+[iOS UI fix] starts at [UI design]'s end
+[iOS UI fix] starts at [iOS development]'s end
+
+@endgantt
